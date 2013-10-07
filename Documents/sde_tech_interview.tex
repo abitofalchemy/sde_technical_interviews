@@ -1,0 +1,446 @@
+\documentclass[letterpaper]{article}
+\usepackage{fontspec}
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+\usepackage{tabularx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,
+			filecolor=black,urlcolor=MidnightBlue} 
+\usepackage{listings} %% for code syntax highlighting
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+%% ------------------------------------------------------------
+\begin{document}
+
+\section{Strategy}
+\begin{table}[ht]
+\centering%\caption{\emph{\bf Test table}}
+\setlength{\extrarowheight}{3pt}
+\caption{\bf\emph{Test table}}
+\begin{tabular}{|l|l|c|}
+\hline
+Date   	& Todo & Outcome \\\hline\hline
+
+Sept 30 & Basics, list of topics to focus on \\
+Oct. 01 & 2 hrs of top-coder\\
+	    & Binary search\\
+		& BST \\
+Oct. 02 & 1 hr of topcoder\\
+		& Arrays and Lists\\
+Oct. 03 & 1 hr of careercup\\
+		& Queueus, Stacks\\
+Oct. 04 & 1 hr of careercup. \\
+		& Heap, priority heaps \\
+Oct. 05 & 1 topcoder and 1 careercup \\
+		& Trees \\
+		& String manipulations\\ 
+Oct. 06 & Search trees & \\
+Oct. 07 & Secure location for the test \\
+		& Test setup { mult machines and screen }\\ 
+Oct. 08 & Day of the  \\\hline
+\end{tabular}%\caption{Test table}
+\end{table}
+
+\section{References}
+
+%% Links
+%% http://docs.oracle.com/cd/E16655_01/mix.121/b14388/gloss-i.htm
+%% https://www.google.com/about/jobs/search/#!t=jo&jid=3481001&
+ 
+\begin{itemize}
+\item \href{http://kundansingh.com/interview/#h1}{Sample Interview Questions}
+\item \href{http://www.cprogramming.com/tutorial/c/lesson1.html}{Intro to programmint in C}
+\item \href{http://www.acm.uiuc.edu/webmonkeys/book/c_guide/1.2.html}{Guide to C}
+\item \href{http://www.ncl.ucar.edu/Document/HLUs/User_Guide/classes/classoview.shtml}{Programming concepts}
+\item \href{http://docs.oracle.com/javase/tutorial/java/concepts/}{Java tutorial - concepts}
+\item \href{http://introcs.cs.princeton.edu/java/21function/}{java functions}
+\item \href{http://www.codeproject.com/Articles/22769/Introduction-to-Object-Oriented-Programming-Concep}{Introduction to Object Oriented Programming Concepts (OOP) and More}
+\item \href{http://www.victusspiritus.com/2011/03/15/brushing-up-on-computer-science-part-2-object-oriented-programming-oop/}{OOP Brush-up} 
+\item \href{http://www.seas.gwu.edu/~drum/cs1112/lectures/module8/module8.html}{Data Structures}
+\item \href{http://www.ibm.com/developerworks/library/j-codetoheap/}{From Java code to Java heap}
+\item \href{http://www.cafeaulait.org/books/jdr/examples/21/}{Data Structures and java.util} 
+and \href{http://www.vogella.com/articles/JavaDatastructures/article.html}{How to implement common data structures (List, Stack, Map) in plain Java}
+\item \href{http://introcs.cs.princeton.edu/java/92symbolic/Fibonacci.java.html}{Fibonacci - Java}
+%% \item \href{}{}
+\item \href{http://www.tutorialspoint.com/javaexamples/data_reverse.htm}{Using Stacks: Reversing the elements of a string} 
+\end{itemize} 
+%% http://rosettacode.org/wiki/Hash_from_two_arrays#Java
+%% http://www.boost.org/doc/libs/1_35_0/doc/html/intrusive/list.html
+%% https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions
+ 
+\subsection{Media}
+ \begin{itemize}
+ \item \href{http://www.youtube.com/watch?v=KTJs-0EInW8}{Stanford Seminar - Google's Steve Yegge on GROK}
+ \item \href{http://www.youtube.com/watch?v=tz-Bb-D6teE}{Dynamic Languages Strike Back} 
+ \end{itemize}
+\section{Review of Stand Libraries}
+
+\section{Common Data Structures}
+Arrays, Linked Lists, Binary Search, Binary Search Trees, Hash Tables, Sets, and Graphs 
+Fibonacci
+
+\begin{itemize}
+\item{\bf Singly linked lists}
+\item{\bf Doubly linked lists}
+\item{\bf Heap}
+\item{\bf Stacks}
+  \subitem \href{http://www.tutorialspoint.com/javaexamples/data_reverse.htm}{Reversing a string using a stack}
+\item{\bf Queueus}
+\item{\bf Hashtables}
+\item{\bf Trees and Binary Trees}
+
+\item{\bf Recursion}
+\item{\bf Graphs} A graph data structure consists of a finite (and possibly mutable) set of ordered pairs, called edges or arcs, of certain entities called nodes or vertices [\href{http://en.wikipedia.org/wiki/Graph_(abstract_data_type)}{Reference}]. 
+\item{\bf BST}
+  \subitem \href{http://algs4.cs.princeton.edu/32bst/}{Binary Search Trees}
+  \subitem \href{http://www.cs.princeton.edu/~rs/AlgsDS07/08BinarySearchTrees.pdf}{Details of 
+  the BST java implementation}
+  \subitem{\bf Binary search algorithm}  
+  Finds the position of a specified input value (the search "key") within an array sorted 
+  by key value.  The binary search is the standard algorithm for searching through a sorted sequence.
+
+%Hubbard, John R. (2009-05-26). Schaums Outline of Data Structures with Java, 2ed (Schaum's Outline Series) (Kindle Location 1365). McGraw-Hill. Kindle Edition. 
+
+\subitem	 Binary search is a logarithmic algorithm and executes in $O(log N)$ time. 
+  \begin{lstlisting}
+  int binary_search(int A[], int key, int imin, int imax)
+  {
+  // test if array is empty
+  if (imax < imin)
+    // set is empty, so return value showing not found
+    return KEY_NOT_FOUND;
+  else
+    {
+      // calculate midpoint to cut set in half
+      int imid = midpoint(imin, imax);
+ 
+      // three-way comparison
+      if (A[imid] > key)
+        // key is in lower subset
+        return binary_search(A, key, imin, imid-1);
+      else if (A[imid] < key)
+        // key is in upper subset
+        return binary_search(A, key, imid+1, imax);
+      else
+        // key has been found
+        return imid;
+    }
+  }
+  \end{lstlisting}
+
+
+\item{\bf Arrays and Strings}
+  An object consisting of a seq of elements; can be created dyn at runtime\\
+\href{http://www.sparknotes.com/cs/searching/hashtables/section3.rhtml}{searching/hashtables}
+
+
+
+\end{itemize}
+\section{OO Object Oriented must knows}
+
+\begin{itemize}
+\item {\bf class, object (and the difference between the two)}
+  	A class is template for objects and describes object behavior; a class is
+    an abstraction; A class is a blueprint or prototype from which objects 
+    are created.
+
+	An object is an instance or member of a class; objects has defined 
+    states; it describes a relationship
+  
+\item {\bf instantiation
+}	The act of creating an object is called instantiation.
+	Create an instance of an class in the form of an object.
+
+\item {\bf method (as opposed to, say, a C function)
+}	Concept of an " object" which is a data structure ( abstract data type) 
+	encapsulated with a set of routines, called " methods", which operate 
+	on the data. Operations on the data can only be performed via these 
+	methods,
+
+\item {\bf virtual method, pure virtual method
+}	Virtual function or virtual method is a function or method whose behavior 
+	can be overridden within an inheriting class by a function with the same signature. This concept is a very important part of the polymorphism
+	Example: class Animal; class Fish inherits from Animal, but overrides eat()
+	so that Fish or Wolf can have the appropriate methods \href{http://en.wikipedia.org/wiki/Virtual_function}
+	{see here}.
+
+\item {\bf final classes}
+	final classes can have no subclasses
+
+\item {\bf class/static method
+}	There are two types of methods in Java, called class methods and object methods. Class methods are identified by the keyword static in the first line. Any method that does not have the keyword static is an object method.
+	But, why? 
+
+\item {\bf static/class initializer
+}	 Programming constructs which perform initialization are typically called 
+	 initializers and initializer lists. Initialization is distinct from 
+	 (and preceded by) declaration, although the two can sometimes be 
+	 conflated in practice.
+
+
+\item {\bf constructor
+}	a special type of subroutine called to create an object.
+	In C++: very time an instance of a class is created the constructor method is called. The constructor has the same name as the class and it doesn't return any type, while the destructor's name it's defined in the same way, but with a '~' in front
+
+\item {\bf destructor/finalizer
+}	Destructors are cleanup methods invoked deterministically and finalizers
+	when the garbage collector tells them. Destructors are called to destruct
+	instances of classes.
+
+	In Java there is no equivalent of a destructor 
+
+
+\item {\bf superclass or base class}
+	Common interface and foundational functionality
+	Example: class Bycicle; subclass: MoutainBike, RoadBike
+
+\item {\bf subclass or derived class}
+	As part of inheritance, we have subclassing, a class that inherits from 
+	a superclass
+
+\item {\bf inheritance}
+	Inheriting members of an existing class (base class), a relationship to 
+	existing class members; inheriting data and functions from another class
+	
+	 \item {\bf 
+encapsulation}
+	mechanism for restricting access to some of the object's components
+	An informaition hiding mechanism by defining methods to be Public or Private
+	(in Java)
+	Hiding the internals of the object protects its integrity by preventing users 
+	from setting the internal data of the component into an invalid or 
+	inconsistent state. A benefit of encapsulation is that it can reduce system 
+	complexity, and thus increases robustness, by allowing the developer to 
+	limit the inter-dependencies between software components. 
+\item {\bf 
+multiple inheritance (and give an example)
+}	Deriving directly from more than one class
+	Trivia: multiple inheritance is not supported like Java 
+
+\item {\bf delegation/forwarding
+}	Delegation is an alternative to inheritance for reusing
+	code among multiple classes. Inheritance uses the
+	IS-A relationship for reuse; delegation uses the HAS-A reference 
+	relationship to do the same. 	
+
+	The delegate is acting on behalf of (performing some of the function of) 
+	the original object.  In Objective-C, protocols describe the methods that 
+	delegates can or must implement in order to perform the activities they've 
+	been delegated to do. 
+
+\item {\bf composition/aggregation
+}	composition gives us a 'part-of' relationship.
+	A "owns" B = Composition : B has no meaning or purpose in the system without A
+	A "uses" B = Aggregation : B exists independently (conceptually) from A
+	Example: A Text Editor owns a Buffer (composition). A Text Editor uses a File (aggregation). When the Text Editor is closed, the Buffer is destroyed but the File itself is not destroyed.
+
+		
+\item {\bf abstract class
+}	An abstract class is one that is not used to construct objects, but only as a basis for making subclasses. An abstract class exists only to express the common properties of all its subclasses. 
+
+\item {\bf interface/protocol (and different from abstract class)
+}	An interface is a description of the actions that an object can do
+	an Interface is a description of all functions that an object must have in order to be an "X".
+
+\item {\bf method overriding
+}	Method overriding is a language feature that allows a subclass to override a specific implementation of a method that is already provided by one of its super-classes. 
+\item {\bf 
+method overloading (and difference from overriding)
+}	The method overloading is the ability to define several methods all with the same name. 
+	(we do this a lot in Java)
+\item {\bf 
+polymorphism (without resorting to examples)
+}	In OOP the polymorphisms is achieved by using many different techniques 
+	named method overloading, operator overloading and method overriding, 
+\item {\bf 
+is-a versus has-a relationships (with examples)
+}	As we know, inheritance gives us an 'is-a' relationship.
+	%% \href{http://cs.unc.edu/~dewan/comp114/s09/ClassNotes/22_Delegation_Notes.pdf}{[pdf]}
+\item {\bf 
+method signatures (what's included in one)}
+	A method is commonly identified by its unique method signature, which usually includes the method name, and the number, types and order of its parameters.
+	A Java static method can provide only one return value, of the type declared in the method signature. 
+\item {\bf 
+method visibility (e.g. public/private/other)}
+	For fields and methods, we have, in addition to public, three more visibility modifiers: internal, protected, and private.
+
+\end{itemize}
+
+\section{More on Concepts}
+Real-world objects contain state and behavior.
+A software object's state is stored in fields.
+A software object's behavior is exposed through methods.
+Hiding internal data from the outside world, and accessing it only through publicly exposed methods is known as data encapsulation.
+A blueprint for a software object is called a class.
+Common behavior can be defined in a superclass and inherited into a subclass using the extends keyword.
+A collection of methods with no implementation is called an interface.
+A namespace that organizes classes and interfaces by functionality is called a package.
+The term API stands for Application Programming Interface.
+
+\section{Algorithms}
+
+\subsection{Sorting}
+\begin{itemize}
+\item{\bf Bubble sort}
+\item{\bf Selection sort}
+\item{\bf Merge-sort} 
+% http://stackoverflow.com/questions/15629651/recursive-merge-sort-java-program
+
+\item{\bf Quick sort}
+\item{\bf Radix-sort}
+\item{\bf Divide and Concquer}
+
+\end{itemize}
+
+\section{Examples}
+\subsection{Fibonacci}
+\begin{lstlisting}
+public static long fib(int n) {
+        if (n <= 1) return n;
+        else return fib(n-1) + fib(n-2);
+    }
+    \end{lstlisting}
+    
+\subsection{Bit structures}
+
+Write a program to store logical values in bit using structure.
+
+\textbf{Solution}
+\begin{verbatim}
+# include <stdio.h>
+# include <conio.h>
+
+ main ()
+ {
+
+struct bits
+{
+int state :1;
+};
+
+struct bits a;
+a.state=13>5;
+clrscr();
+if (a.state==0) printf ("False");
+else printf ("True : %d",5>1);
+}
+
+OUTPUT
+True: 1
+
+
+\end{verbatim}
+
+Explanation In the structure bits, the number of bits given is to be used by the member of structure to store values. The value returned by the expression 13>5 are stored in variable state that stores the value in one bit. The if statement checks the value and the appropriate message is displayed.
+
+\subsection{Fibonacci}
+A naive implementation, an optimized version should use memoization to deal with runtime.
+
+\begin{lstlisting}
+public class prob2 {
+	// naive recursive implementation
+	public static long fib(int n) {
+        if (n <= 1) return n;
+        else return fib(n-1) + fib(n-2);
+    }
+	
+	/* Each new term in the Fibonacci sequence is generated by adding 
+	 * the previous two terms. By starting with 1 and 2, the first 10 
+	 * terms will be:
+
+		1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+
+	 * By considering the terms in the Fibonacci sequence whose values 
+	 * do not exceed four million, find the sum of the even-valued 
+	 * terms.
+	 */
+
+	public static void main(String[] args) {
+		long curr_fib = 0L;
+		long even_sum = 0L;
+		int  n =2;
+		
+		while(curr_fib <= 4000000) {
+			if ( (curr_fib = fib(n)) % 2 == 0)
+				even_sum += curr_fib;
+			n++;
+		}
+		System.out.println("Sum: "+even_sum);
+	}
+}
+\end{lstlisting}
+%%\begin{tabularx}{\linewidth}{X}
+%\noindent\textbf{TestArrays}
+%\begin{lstlisting}
+%import java.util.Arrays;  
+%  
+%public class TestArrays {  
+%	public static void main(String[] args) {  
+%           int[] a = {44, 77, 55, 22, 99, 88, 33, 66};  
+%           print(a);  
+%           Arrays.sort(a);  
+%           print(a);
+%  	}
+% } 
+%\end{lstlisting} 
+  %%from: Hubbard, John R. (2009-05-26). Schaums Outline of Data Structures with Java, 2ed (Schaum's Outline Series) (Kindle Locations 1265-1270). McGraw-Hill. Kindle Edition. 
+
+%\noindent\textbf{Arrays utility}
+%\begin{lstlisting}
+%int joe[4][5]={
+%	{1,2,3,4,5},
+%	{6,7,8,9,10},
+%	{11,12,13,14,15}
+%	};
+%\end{lstlisting} 
+%
+%The first row initializes joe[0], the second row joe[1] and so forth. 
+%joe[3] is initialized to 5 zeros.
+%The same effect is achieved by: \\
+%\texttt{$int joe[4][5]={ 
+%	1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};$}\\
+
+
+\subsection{Java Literal types range}
+\href{http://www.jchq.net/certkey/0406certkey.htm}{Reference}
+\begin{lstlisting}
+char testChar = 01;
+byte testByte = -128;
+int testInt = -2147483648;
+short testShort = -32768;
+long testLong = 9223372036854775807L;
+float testFoat;
+double testDouble = 4.940656458412;
+boolean testBool = true;
+\end{lstlisting}
+\subsection{Working with pointers}
+
+\section{Strengths and Weaknesses of C, C++, Java, Python, Objective-C}
+\href{https://files.nyu.edu/ahl266/public/java.pdf}{java.pdf}
+\href{http://introcs.cs.princeton.edu/java/faq/c2java.html}{General comparison}
+\href{http://en.wikipedia.org/wiki/Comparison_of_Java_and_C}{Comparison of Java and C} 
+\href{http://www.python.org/doc/essays/comparisons.html}{Python compared to others (Java, C++}
+\end{document}
+
